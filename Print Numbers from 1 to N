@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace::std;
+
+int main() {
+    
+//    #problem 26 up
+   int j ;
+    cout << "Enter Number to print the Loop? \n";
+    cin >> j;
+    cout << "****" << endl;
+
+    for (int i = 1; i <= j; i++) {
+        cout << i << endl;
+    }
+
+ return 0;
+}
