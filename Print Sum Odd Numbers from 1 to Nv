@@ -1,0 +1,20 @@
+
+#include <iostream>
+using namespace::std;
+
+int main() {
+
+//    Problem 28
+    
+    int N = 10;
+    int count = 0;
+    
+    if ( count == N ) {
+        cout << count << endl;
+    }
+    else {
+        count = count + 2 ;
+    };
+    
+    return 0;
+}
