@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace::std;
+
+
+int printNumberFrom1toN ( ){
+    
+    int i = 1;
+    while (i <= 10) {
+        cout << i << endl;
+        i++;
+    }
+    return 0;
+}
+int main() {
+    
+    printNumberFrom1toN();
+    
+    return 0;
+}
