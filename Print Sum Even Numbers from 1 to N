@@ -1,0 +1,23 @@
+int printSumEvenNumber( ){
+    
+    int i = 2 , N;
+    int sum = 0;
+    
+    cout <<"Enter a Number? \n";
+    cin >> N;
+    
+    
+    while (i <= N ) {
+        sum += i;
+        i += 2;
+    }
+    cout <<"The sum odd number from "<< N <<" to 1 is: " << sum << endl;
+    return 0;
+}
+
+
+int main() {
+    
+    printSumEvenNumber();
+    return 0;
+}
