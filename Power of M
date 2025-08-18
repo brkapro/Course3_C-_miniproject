@@ -1,0 +1,18 @@
+int powerOfM(int base ,int exponent ){
+    
+    int result = 1;
+    
+    while (exponent > 0) {
+        result *= base ;
+        exponent--;
+    }
+    
+    cout << result << endl;
+    return 0;
+}
+
+int main() {
+    
+    powerOfM(10, 2);
+    return 0;
+}
