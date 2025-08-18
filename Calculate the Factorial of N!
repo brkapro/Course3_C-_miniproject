@@ -1,0 +1,20 @@
+int printFactorialNum( ){
+    int N, i = 1 , sum = 1;
+    
+    cout <<"Enter a Number? \n";
+    cin >> N;
+    
+    while (N >= i) {
+        sum *= N;
+        N--;
+    }
+    cout <<"The Factorial number is: " << sum << endl;
+
+    return 0;
+}
+
+int main() {
+    
+    printFactorialNum();
+    return 0;
+}
