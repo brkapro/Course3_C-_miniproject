@@ -1,0 +1,30 @@
+// #20
+
+float ReadSquareSide ()
+{
+    float A;
+    cout << "Enter the square side A" << endl;
+    cin >> A;
+    
+    return A;
+}
+
+float CalculateCircleAreaBySquareSide (float A )
+{
+    const float PI = 3.14159265;
+
+    float Area = (PI * pow(A, 2)) / 4;
+    
+    return Area;
+}
+
+void PrintCircleAreaBySquareSide(float Area)
+{
+    cout << Area << endl;
+}
+
+int main() {
+
+ PrintCircleAreaBySquareSide(CalculateCircleAreaBySquareSide(ReadSquareSide()));
+    return 0;
+}
