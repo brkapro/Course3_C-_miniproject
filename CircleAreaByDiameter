@@ -1,0 +1,31 @@
+// Problem 19
+
+float ReadDiameter (){
+    
+    float D;
+    
+    cout << "Enter the radios diameter? \n";
+    cin >> D;
+    
+    return D;
+}
+
+float CircleAreaByDiameter (float D )
+{
+    const float PI = 3.14159265;
+    
+    float Area = (pow(D, 2) * PI) / 4;
+    
+    return Area;
+}
+
+void PrintCircleAreaByDiameter (float Area )
+{
+    cout << "\nCircle Area = " << Area << endl;
+}
+
+int main() { 
+
+PrintCircleAreaByDiameter(CircleAreaByDiameter(ReadDiameter()));
+    return 0;
+}
