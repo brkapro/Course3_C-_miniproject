@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace::std;
+
+// #Problem 21
+
+float ReadCircumference( )
+{
+    float L;
+    cout << "Please Enter the circumference of the circle?" << endl;
+    cin >> L;
+    
+    return L;
+}
+
+float CalculatCircleAreaByCircumference(float L)
+{
+    const float PI = 3.14159;
+    float Area = pow(L, 2) / (4 * PI) ;
+    
+    return Area;
+}
+
+void PrintCirleArea(float Area)
+{
+    cout << "\nCircle Area = " << Area << endl;
+}
+
+int main() {
+    
+    PrintCirleArea(CalculatCircleAreaByCircumference(ReadCircumference()));
+    
+    return EXIT_SUCCESS;
+}
