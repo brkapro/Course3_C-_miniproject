@@ -1,0 +1,32 @@
+
+// #Problem 22
+
+void ReadTrianglesSide(float& a , float& b )
+{
+    cout << "Please Enter triangle side (a)?" << endl;
+    cin >> a;
+    cout << "Please Enter triangle side (b)?" << endl;
+    cin >> b;
+    
+}
+
+float CalculatCircleAreaByIsoscelesTriangle(float a, float b)
+{
+
+    const float PI = 3.14159;
+    float Area = PI * (pow(b, 2) / 4) * ((2 * a - b) / (2 * a + b)) ;
+    
+    return Area;
+}
+void PrintCirleArea(float Area)
+{
+    cout << "\nCircle Area = " << Area << endl;
+}
+
+int main() {
+    
+    float a, b;
+    ReadTrianglesSide(a, b);
+    PrintCirleArea(CalculatCircleAreaByIsoscelesTriangle(a, b));
+return;
+}
