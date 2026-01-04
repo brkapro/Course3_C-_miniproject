@@ -1,0 +1,37 @@
+// #Problem 23
+
+void ReadCircleAreaArbitrary(float& a,float& b ,float& c)
+{
+    cout << "Enter a ?" << endl ;
+    cin >> a;
+    cout << "Enter b ?" << endl;
+    cin >> b;
+    cout << "Enter c ?" << endl;
+    cin >> c;
+}
+
+float CalculateCircleAreaByTriangle (float a, float b, float c)
+{
+    const float PI = 3.14159;
+    float P;
+    P = (a + b + c)/ 2;
+    
+    float T ;
+    T= (a * b * c) / (4 * sqrt(P * (P - a) * ( P - b) * (P - c))) ;
+    
+    float Area = PI * pow(T, 2);
+    return Area;
+}
+void PrintCirleArea(float Area)
+{
+    cout << "\nCircle Area = " << Area << endl;
+}
+
+int main ()
+{
+    float a , b , c;
+    ReadCircleAreaArbitrary(a, b, c);
+    PrintCirleArea(CalculateCircleAreaByTriangle(a, b, c)); 
+
+return ;
+}
